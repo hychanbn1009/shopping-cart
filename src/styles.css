@@ -3,3 +3,7 @@
     height: auto!important;
     object-fit: cover;
 }
+
+.header{
+    z-index:1;
+}

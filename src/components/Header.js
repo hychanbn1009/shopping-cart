@@ -7,12 +7,12 @@ const Header=()=>{
         <div className='header'>
             <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="#home">Zaku Shop</Navbar.Brand>
+            <Navbar.Brand href="/">Zaku Shop</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="ms-auto">
-                <Nav.Link href="#deets">Home</Nav.Link>
-                <Nav.Link href="#deets">Products</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/products">Products</Nav.Link>
                 <Nav.Link>Contact</Nav.Link>
                 </Nav>
             </Navbar.Collapse>

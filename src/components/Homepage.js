@@ -1,16 +1,14 @@
 import React from 'react'
-import Header from './Header'
 import zakuteam from '../assets/images/icon.jpeg'
 import zaku2 from '../assets/images/zaku2.webp'
 import sm from '../assets/images/SM.webp'
 import zaku2v2 from '../assets/images/zaku2v2.webp'
-import '../styles/header.css'
-import Footer from './Footer'
+import client1 from'../assets/images/soldier1.webp'
+import client2 from'../assets/images/soldier2.webp'
 
 const Homepage=()=>{
     return(
         <div>
-            <Header/>
             <div className='container mt-5'>
                 <div className='row align-items-center'>
                     <div className='col-sm-8'>
@@ -29,34 +27,58 @@ const Homepage=()=>{
                     <p className='text-center mt-5'>Many famous Zeon ace pilots began their career in the MS-06C, including Johnny Ridden, Shin Matsunaga, and Char Aznable. Notably, Ridden was able to sink three battleships in his MS-06C during the One Week Battle. The Black Tri-Stars also piloted the MS-06C when they captured General Revil during the Battle of Loum.</p>
                     </div>
                 </div>
-                <div className='row row-cols-md-10 mt-5'>
-                    <div className='col-sm-4'>
-                        <div class='card'>
-                            <img src={zaku2} class="card-img-top img-fluid" alt="zaku 2"/>
-                            <div class="card-body">
-                                <p class="card-text">The Best Tech from Zeon</p>
+                <div className='row mt-5'>
+                    <div className='col-4'>
+                        <div className='card h-100 shadow'>
+                            <img src={zaku2} className="card-img-top img-fluid" alt="zaku 2"/>
+                            <div className="card-body">
+                                <p className="card-text">The Best Tech from Zeon</p>
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-4'>
-                        <div class='card'>
-                            <img src={sm} class="card-img-top img-fluid" alt="zaku 2"/>
-                            <div class="card-body">
-                                <p class="card-text">Customized For Ace</p>
+                    <div className='col-4'>
+                        <div className='card h-100 shadow'>
+                            <img src={sm} className="card-img-top img-fluid" alt="zaku 2"/>
+                            <div className="card-body">
+                                <p className="card-text">Customized For Ace</p>
                             </div>
                         </div>
                     </div>
-                    <div className='col-sm-4'>
-                        <div class='card'>
-                            <img src={zaku2v2} class="card-img-top img-fluid" alt="zaku 2"/>
-                            <div class="card-body">
-                                <p class="card-text">Armaments for different purpose</p>
+                    <div className='col-4'>
+                        <div className='card h-100 shadow'>
+                            <img src={zaku2v2} className="card-img-top img-fluid" alt="zaku 2"/>
+                            <div className="card-body">
+                                <p className="card-text">Armaments for different purpose</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <Footer/>
+            <div className='container mb-5 align-items-center'>
+                <div className='row mt-5'>
+                    <h1 className='text-center'>Clients Feedback</h1>
+                </div>
+                <div className='row mt-5 justify-content-center'>
+                    <div className='col-3'>
+                        <div className='card h-100 border-0'>
+                            <img src={client1} className="card-img-top img-fluid" alt="zaku 2"/>
+                            <div className="card-body">
+                                <div className='card-title'>Sam</div>
+                                <p className="card-text">I love Zaku</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='col-3'>
+                        <div className='card h-100 border-0'>
+                            <img src={client2} className="card-img-top img-fluid" alt="zaku 2"/>
+                            <div className="card-body">
+                                <div className='card-title'>Tony</div>
+                                <p className="card-text">The best MS!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
