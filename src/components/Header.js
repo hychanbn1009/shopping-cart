@@ -1,25 +1,24 @@
 import React from 'react'
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import {NavLink} from "react-router-dom";
 import '../styles/header.css'
+import {Container,Navbar,Nav } from 'react-bootstrap';
 
 const Header=()=>{
     return(
-        <div className='header'>
-            <Navbar collapseOnSelect expand="sm" bg="dark" variant="dark">
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
-            <Navbar.Brand href="/">Zaku Shop</Navbar.Brand>
+            <Navbar.Brand className="navbar-brand" href="#home">Zaku Shop</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="ms-auto">
-                <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="/products">Products</Nav.Link>
-                <Nav.Link>Contact</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="ms-auto">
+                        <NavLink to="/" className="nav-link">Home</NavLink>
+                        <NavLink to="/products" className="nav-link">Products</NavLink>
+                        <NavLink to="/shopping_cart" className="nav-link">Cart</NavLink> 
+                    </Nav>
+                </Navbar.Collapse>
             </Container>
-            </Navbar>
-        </div>
+        </Navbar>
     )
 }
 
-export default Header
+export default Header;

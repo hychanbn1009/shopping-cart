@@ -4,6 +4,7 @@ import Homepage from './Homepage'
 import Footer from './Footer'
 import { Route, Routes } from "react-router";
 import Products from './Products';
+import Cart from './Cart';
 import productData from '../assets/productData'
 
 class Main extends Component{
@@ -36,6 +37,7 @@ class Main extends Component{
                 <Routes>
                     <Route path="/" element={<Homepage/>} />
                     <Route path="/products" element={<Products productData={productData} addItem={this.addItem}/>} />
+                    <Route path="/shopping_cart" element={<Cart shoppingCart={this.state.shoppingCart} />} />
                 </Routes>
                 <Footer className='mt-auto'/>
             </div>
