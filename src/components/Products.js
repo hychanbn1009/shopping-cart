@@ -13,8 +13,8 @@ const Products =(props)=>{
                 <div className='row'>
             {props.productData.map((product,index)=>{
                 return(
-                    <div className='col-4 mt-3 mb-3'>
-                        <div className='card h-100 shadow'>
+                    <div className='col-lg-3 col-md-4 col-sm-6 mt-3 mb-3'>
+                        <div className='card shadow'>
                             <img src={product.img} className="card-img-top img-fluid" alt={product.name}/>
                             <div className="card-body">
                                 <p className="card-title">{product.name}</p>
