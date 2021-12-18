@@ -17,6 +17,7 @@ class Main extends Component{
         this.addItem=this.addItem.bind(this)
         this.increaseQuantity=this.increaseQuantity.bind(this)
         this.decreaseQuantity=this.decreaseQuantity.bind(this)
+        this.removeItem=this.removeItem.bind(this)
     }
 
     addItem=(productDetails)=>{
@@ -58,6 +59,17 @@ class Main extends Component{
         })
     }
 
+    removeItem=(productDetails)=>{
+        let add_shoppingCart=this.state.shoppingCart
+        this.state.shoppingCart.find(shoppingCart_item => shoppingCart_item.name===productDetails.name)
+        const position = this.state.shoppingCart.findIndex(shoppingCart_item => shoppingCart_item.name===productDetails.name)
+        add_shoppingCart.splice(position,1)
+        const newItemCount=this.state.shoppingCart.reduce((total, product)=>total+(product.quantity),0)
+        this.setState({
+            shoppingCart:add_shoppingCart,
+            itemCount:newItemCount
+        })
+    }
 
     render(){
         return(
@@ -66,7 +78,7 @@ class Main extends Component{
                     <Routes>
                         <Route path="/" element={<Homepage/>} />
                         <Route path="/products" element={<Products productData={productData} addItem={this.addItem}/>} />
-                        <Route path="/shopping_cart" element={<Cart shoppingCart={this.state.shoppingCart} increaseQuantity={this.increaseQuantity} decreaseQuantity={this.decreaseQuantity}/>} />
+                        <Route path="/shopping_cart" element={<Cart shoppingCart={this.state.shoppingCart} removeItem={this.removeItem} increaseQuantity={this.increaseQuantity} decreaseQuantity={this.decreaseQuantity} itemCount={this.state.itemCount}/>} />
                     </Routes>
                 <Footer className='mt-auto'/>
             </div>
