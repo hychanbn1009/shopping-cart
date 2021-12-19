@@ -15,28 +15,32 @@ const productData=
       "name": "Rabbit Cannon",
       "price": 500,
       "img": rabbitCannon,
-      "description":"A slightly modified version of the mid-range support unit Zaku Cannon. Based on the Zaku II, the revamped Zaku Cannon was equipped with a 180mm anti-air cannon. "
+      "description":"A slightly modified version of the mid-range support unit Zaku Cannon. Based on the Zaku II, the revamped Zaku Cannon was equipped with a 180mm anti-air cannon. ",
+      "stock":10
     },
     {
       "id": 1,
       "name": "Zaku 2 FS",
       "price": 200,
       "img": zaku2FS,
-      "description":"A minor upgrade to the Zaku II, produced in small quantities as command units in the period before the further enhanced Zaku II Type S was completed and deployed. "
+      "description":"A minor upgrade to the Zaku II, produced in small quantities as command units in the period before the further enhanced Zaku II Type S was completed and deployed. ",
+      "stock":20
     },
     {
       "id": 2,
       "name": "Zaku Desert (DA)",
       "price": 200,
       "img": zakuDesert,
-      "description":"As a variation of the Zaku II localized warfare type, this version was designed to improve performance in desert environments."
+      "description":"As a variation of the Zaku II localized warfare type, this version was designed to improve performance in desert environments.",
+      "stock": 15
     },
     {
       "id": 3,
       "name": "Zaku 2 F2",
       "price": 250,
       "img": zaku2F2,
-      "description":"A later mass production model and modification of the Zaku II. "
+      "description":"A later mass production model and modification of the Zaku II. ",
+      "stock": 15
     },
     {
       "id": 4,
@@ -44,34 +48,39 @@ const productData=
       "price": 300,
       "img": zakuMariner,
       "description": "A Zaku II modified for amphibious combat. The base Zaku II proved to be extremely versatile, with on-site modifications for desert or cold environments greatly expanding the front lines.",
+      "stock": 5
     },
     {
       "id": 5,
       "name": "Zaku 2 Kai",
       "price": 600,
       "img": zaku2Kai,
-      "description":"With the war prolonged beyond the Principality of Zeon's expectations, operations failed to sufficiently take into account the lack of materials and rapid introduction of new MS, and even experienced pilots began having trouble adapting to new suits."
+      "description":"With the war prolonged beyond the Principality of Zeon's expectations, operations failed to sufficiently take into account the lack of materials and rapid introduction of new MS, and even experienced pilots began having trouble adapting to new suits.",
+      "stock": 4
     },
     {
       "id": 6,
       "name": "Psyco Zaku",
       "price": 1000,
       "img": psycoZaku,
-      "description":"An MS developed by the Living Dead Division, a unit formed in order to gather combat data on pilots with prosthetic limbs and deployed to the Thunderbolt Sector. "
+      "description":"An MS developed by the Living Dead Division, a unit formed in order to gather combat data on pilots with prosthetic limbs and deployed to the Thunderbolt Sector. ",
+      "stock": 1
     },
     {
       "id": 7,
       "name": "Zaku Recon Type",
       "price": 800,
       "img": zakuRecon,
-      "description":"A reconnaissance mobile suit based on the Zaku II. During Minovsky particle dispersion, vision-based combat has become the norm, and reconnaissance had become more important than it was in the past."
+      "description":"A reconnaissance mobile suit based on the Zaku II. During Minovsky particle dispersion, vision-based combat has become the norm, and reconnaissance had become more important than it was in the past.",
+      "stock": 2
     },
     {
       "id": 8,
       "name": "High Mobility Psycommu Zaku II",
       "price": 900,
       "img": highMobilityZaku,
-      "description":"This unit is based on the unit 2 of the test machine Bishop that was created during the 'Bishop Plan' which developed the MS Zeong for Newtypes."
+      "description":"This unit is based on the unit 2 of the test machine Bishop that was created during the 'Bishop Plan' which developed the MS Zeong for Newtypes.",
+      "stock": 1
     }
   ]
 

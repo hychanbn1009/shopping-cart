@@ -20,18 +20,17 @@ class Main extends Component{
         this.removeItem=this.removeItem.bind(this)
     }
 
-    addItem=(productDetails)=>{
+    addItem=(productDetails,quantity)=>{
         let add_shoppingCart=this.state.shoppingCart
         if (this.state.shoppingCart.find(shoppingCart_item => shoppingCart_item.name===productDetails.name)){
             const position = this.state.shoppingCart.findIndex(shoppingCart_item => shoppingCart_item.name===productDetails.name)
-            add_shoppingCart[position].quantity+=1
+            add_shoppingCart[position].quantity=parseInt(add_shoppingCart[position].quantity)+parseInt(quantity)
         }else{
-            add_shoppingCart=[...this.state.shoppingCart,{name:productDetails.name,description:productDetails.description,img:productDetails.img,price:productDetails.price,quantity:1}]
+            add_shoppingCart=[...this.state.shoppingCart,{name:productDetails.name,description:productDetails.description,img:productDetails.img,price:productDetails.price,quantity:parseInt(quantity)}]
         }
-        {console.log(add_shoppingCart)}
         this.setState({
             shoppingCart:add_shoppingCart,
-            itemCount:this.state.itemCount+1
+            itemCount:this.state.itemCount+parseInt(quantity)
         })
     }
 
@@ -73,14 +72,20 @@ class Main extends Component{
 
     render(){
         return(
-            <div>
-                <Header itemCount={this.state.itemCount}/>
+            <div className="body">
+                <div className="header">
+                    <Header itemCount={this.state.itemCount}/>
+                </div>
+                <div className="main">
                     <Routes>
                         <Route path="/" element={<Homepage/>} />
-                        <Route path="/products" element={<Products productData={productData} addItem={this.addItem}/>} />
+                        <Route path="/products" element={<Products productData={productData} addItem={this.addItem} increaseQuantity={this.increaseQuantity} decreaseQuantity={this.decreaseQuantity}/>} />
                         <Route path="/shopping_cart" element={<Cart shoppingCart={this.state.shoppingCart} removeItem={this.removeItem} increaseQuantity={this.increaseQuantity} decreaseQuantity={this.decreaseQuantity} itemCount={this.state.itemCount}/>} />
                     </Routes>
-                <Footer className='mt-auto'/>
+                </div>
+                <div className="footer">
+                    <Footer/>
+                </div>
             </div>
         )
     }

@@ -5,10 +5,11 @@ import sm from '../assets/images/SM.webp'
 import zaku2v2 from '../assets/images/zaku2v2.webp'
 import client1 from'../assets/images/soldier1.webp'
 import client2 from'../assets/images/soldier2.webp'
+import '../styles/homepage.css'
 
 const Homepage=()=>{
     return(
-        <div>
+        <div className="container">
             <div className='container mt-5'>
                 <div className='row align-items-center'>
                     <div className='col-sm-8'>

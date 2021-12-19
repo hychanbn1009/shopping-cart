@@ -15,10 +15,14 @@ const Cart =(props)=>{
         props.removeItem(product)
     }
     
+    const alertMessage=()=>{
+        alert("we are still preparing the payment method! Thank you!")
+    }
+
     function displayCard(){
         if(props.shoppingCart.length!==0){
             return(
-                <div className="container">
+                <div>
                     <div className="row">
                         <div className="col-8">
                             {props.shoppingCart.map((product,index)=>{
@@ -48,26 +52,36 @@ const Cart =(props)=>{
                                 )
                             })}
                         </div>
-                        <div className="col-4 vh-50 mt-3 mb-3 bg-light">
+                        <div className="col-4 mt-3 mb-3 bg-light">
                             <h2>Your Bag</h2>
                             <h4>You have {props.itemCount} items now.</h4>
                             <h4>TOTAL: ${props.shoppingCart.reduce((total, product)=>total+(product.price*product.quantity),0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
-                            <button type="button" className="btn btn-primary">Check out</button>
+                            <button type="button" className="btn btn-primary" onClick={()=>alertMessage()}>Check out</button>
                         </div>
                     </div>
                 </div>
             )
         }
-        return (<p>no item</p>)
+        return (
+            <div className="container">
+                <div className="row">
+                    <div className="col">
+                        <p className="fs-1 fw-bolder align-middle text-center">-Your Bag is Empty-</p>
+                    </div>
+                </div>
+            </div>
+        )
     }
 
     return(
-        <div className="container">
-            {displayCard()}
+        <div className="container h-100 justify-content-center align-items-center">
+            <div className="row">
+                {displayCard()}
+            </div>
         </div>
     )
 }
 
 export default Cart;
 
-// {props.shoppingCart.map((product,index)=>{}
+// {displayCard()}
