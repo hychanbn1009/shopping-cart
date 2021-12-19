@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/shopping-cart/static/css/main.286b1c73.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.28ac287a.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.28ac287a.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.22e61109.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.22e61109.js.map",
+    "static/css/2.0a9ec390.chunk.css": "/shopping-cart/static/css/2.0a9ec390.chunk.css",
+    "static/js/2.4c990a3d.chunk.js": "/shopping-cart/static/js/2.4c990a3d.chunk.js",
+    "static/js/2.4c990a3d.chunk.js.map": "/shopping-cart/static/js/2.4c990a3d.chunk.js.map",
+    "static/js/3.04b5ee14.chunk.js": "/shopping-cart/static/js/3.04b5ee14.chunk.js",
+    "static/js/3.04b5ee14.chunk.js.map": "/shopping-cart/static/js/3.04b5ee14.chunk.js.map",
+    "index.html": "/shopping-cart/index.html",
+    "static/css/2.0a9ec390.chunk.css.map": "/shopping-cart/static/css/2.0a9ec390.chunk.css.map",
+    "static/css/main.286b1c73.chunk.css.map": "/shopping-cart/static/css/main.286b1c73.chunk.css.map",
+    "static/js/2.4c990a3d.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.4c990a3d.chunk.js.LICENSE.txt",
+    "static/media/High_Mobility_Psycommu_Zaku_II.68fa3974.webp": "/shopping-cart/static/media/High_Mobility_Psycommu_Zaku_II.68fa3974.webp",
+    "static/media/Psyco_Zaku.56b78478.webp": "/shopping-cart/static/media/Psyco_Zaku.56b78478.webp",
+    "static/media/Rabbit_cannon.609afdcb.webp": "/shopping-cart/static/media/Rabbit_cannon.609afdcb.webp",
+    "static/media/SM.cc61e460.webp": "/shopping-cart/static/media/SM.cc61e460.webp",
+    "static/media/Zaku_Desert_(DA).7ba4a4bf.webp": "/shopping-cart/static/media/Zaku_Desert_(DA).7ba4a4bf.webp",
+    "static/media/Zaku_II_F2.48577b6f.webp": "/shopping-cart/static/media/Zaku_II_F2.48577b6f.webp",
+    "static/media/Zaku_II_FS.09123e81.webp": "/shopping-cart/static/media/Zaku_II_FS.09123e81.webp",
+    "static/media/Zaku_II_Kai.f01d77f1.webp": "/shopping-cart/static/media/Zaku_II_Kai.f01d77f1.webp",
+    "static/media/Zaku_Mariner.8330261a.webp": "/shopping-cart/static/media/Zaku_Mariner.8330261a.webp",
+    "static/media/Zaku_recon_type.474c91c6.webp": "/shopping-cart/static/media/Zaku_recon_type.474c91c6.webp",
+    "static/media/icon.d4a8e0d2.jpeg": "/shopping-cart/static/media/icon.d4a8e0d2.jpeg",
+    "static/media/soldier1.d7c42d33.webp": "/shopping-cart/static/media/soldier1.d7c42d33.webp",
+    "static/media/soldier2.30d69402.webp": "/shopping-cart/static/media/soldier2.30d69402.webp",
+    "static/media/zaku2.cb1a918c.webp": "/shopping-cart/static/media/zaku2.cb1a918c.webp",
+    "static/media/zaku2v2.008df8cf.webp": "/shopping-cart/static/media/zaku2v2.008df8cf.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.22e61109.js",
+    "static/css/2.0a9ec390.chunk.css",
+    "static/js/2.4c990a3d.chunk.js",
+    "static/css/main.286b1c73.chunk.css",
+    "static/js/main.28ac287a.chunk.js"
+  ]
+}
