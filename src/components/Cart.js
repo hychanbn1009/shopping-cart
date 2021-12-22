@@ -3,7 +3,6 @@ import React from "react";
 const Cart =(props)=>{
 
     const increaseQty=(product)=>{
-        {console.log(product.quantity)}
         props.increaseQuantity(product)
     }
 
@@ -36,7 +35,7 @@ const Cart =(props)=>{
                                     <div className="card-body">
                                         <h5 className="card-title">{product.name}</h5>
                                         <p className="card-text">{product.description}</p>
-                                        <p className="card-text">${product.price}</p>
+                                        <p className="card-text">${product.price} x {product.quantity} = ${parseInt(product.price)*parseInt(product.quantity)}</p>
                                         <div className="d-flex justify-content-between">
                                         <div className="btn-group">
                                             <button type="button" className="btn btn-primary" onClick={(event)=>decreaseQty(product)}>-</button>
@@ -55,6 +54,15 @@ const Cart =(props)=>{
                         <div className="col-4 mt-3 mb-3 bg-light">
                             <h2>Your Bag</h2>
                             <h4>You have {props.itemCount} items now.</h4>
+                            {props.shoppingCart.map((product,index)=>{
+                            return(
+                                <div className="card">
+                                <div className="card-body">
+                                    <h5 className="card-title">{product.name}</h5>
+                                    <p className="card-text">${parseInt(product.price)*parseInt(product.quantity)}</p>
+                                </div>
+                                </div>
+                            )})}
                             <h4>TOTAL: ${props.shoppingCart.reduce((total, product)=>total+(product.price*product.quantity),0).toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h4>
                             <button type="button" className="btn btn-primary" onClick={()=>alertMessage()}>Check out</button>
                         </div>

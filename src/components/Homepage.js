@@ -16,14 +16,14 @@ const Homepage=()=>{
                         <img src={zakuteam} className='img-fluid' alt='Zaku'></img>
                     </div>
                     <div className='col-sm-4'> 
-                        <h1>The Best Moblie Suit</h1>
+                        <h3>The Best Moblie Suit</h3>
                         <p>The successor to the first fielded MS, the MS-05 Zaku I, the Zaku II improved on everything the previous model offered. It was faster, more durable, had a superior reactor, and could be fitted with more weapons. The Zaku II was the mainstay of the Zeon military for most of the One Year War.</p>
                     </div>
                 </div>
             </div>
-            <div className='container vh-100 mt-5 align-items-center'>
+            <div className='container mt-3 align-items-center'>
                 <div className='row justify-content-center'>
-                    <h1 className='text-center mt-5'>Why Zaku?</h1>
+                    <h3 className='text-center mt-5'>Why Zaku?</h3>
                     <div className='col-8'>
                     <p className='text-center mt-5'>Many famous Zeon ace pilots began their career in the MS-06C, including Johnny Ridden, Shin Matsunaga, and Char Aznable. Notably, Ridden was able to sink three battleships in his MS-06C during the One Week Battle. The Black Tri-Stars also piloted the MS-06C when they captured General Revil during the Battle of Loum.</p>
                     </div>
@@ -55,9 +55,9 @@ const Homepage=()=>{
                     </div>
                 </div>
             </div>
-            <div className='container mb-5 align-items-center'>
+            <div className='container mt-3 mb-3 align-items-center'>
                 <div className='row mt-5'>
-                    <h1 className='text-center'>Clients Feedback</h1>
+                    <h3 className='text-center'>Clients Feedback</h3>
                 </div>
                 <div className='row mt-5 justify-content-center'>
                     <div className='col-3'>

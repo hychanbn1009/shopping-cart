@@ -8,7 +8,7 @@ const Header=(props)=>{
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Container>
-            <Navbar.Brand className="navbar-brand" href="#home">Zaku Shop</Navbar.Brand>
+            <NavLink className="navbar-brand" to="/">Zaku Shop</NavLink>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="ms-auto">
