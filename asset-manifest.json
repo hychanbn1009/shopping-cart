@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/shopping-cart/static/css/main.286b1c73.chunk.css",
-    "main.js": "/shopping-cart/static/js/main.c411628e.chunk.js",
-    "main.js.map": "/shopping-cart/static/js/main.c411628e.chunk.js.map",
-    "runtime-main.js": "/shopping-cart/static/js/runtime-main.22e61109.js",
-    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.22e61109.js.map",
+    "main.js": "/shopping-cart/static/js/main.8399a37d.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.8399a37d.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.2a9d9c69.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.2a9d9c69.js.map",
     "static/css/2.0a9ec390.chunk.css": "/shopping-cart/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.4c990a3d.chunk.js": "/shopping-cart/static/js/2.4c990a3d.chunk.js",
-    "static/js/2.4c990a3d.chunk.js.map": "/shopping-cart/static/js/2.4c990a3d.chunk.js.map",
-    "static/js/3.04b5ee14.chunk.js": "/shopping-cart/static/js/3.04b5ee14.chunk.js",
-    "static/js/3.04b5ee14.chunk.js.map": "/shopping-cart/static/js/3.04b5ee14.chunk.js.map",
+    "static/js/2.13557fee.chunk.js": "/shopping-cart/static/js/2.13557fee.chunk.js",
+    "static/js/2.13557fee.chunk.js.map": "/shopping-cart/static/js/2.13557fee.chunk.js.map",
+    "static/js/3.3213e0e0.chunk.js": "/shopping-cart/static/js/3.3213e0e0.chunk.js",
+    "static/js/3.3213e0e0.chunk.js.map": "/shopping-cart/static/js/3.3213e0e0.chunk.js.map",
     "index.html": "/shopping-cart/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/shopping-cart/static/css/2.0a9ec390.chunk.css.map",
     "static/css/main.286b1c73.chunk.css.map": "/shopping-cart/static/css/main.286b1c73.chunk.css.map",
-    "static/js/2.4c990a3d.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.4c990a3d.chunk.js.LICENSE.txt",
+    "static/js/2.13557fee.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.13557fee.chunk.js.LICENSE.txt",
     "static/media/High_Mobility_Psycommu_Zaku_II.68fa3974.webp": "/shopping-cart/static/media/High_Mobility_Psycommu_Zaku_II.68fa3974.webp",
     "static/media/Psyco_Zaku.56b78478.webp": "/shopping-cart/static/media/Psyco_Zaku.56b78478.webp",
     "static/media/Rabbit_cannon.609afdcb.webp": "/shopping-cart/static/media/Rabbit_cannon.609afdcb.webp",
@@ -31,10 +31,10 @@
     "static/media/zaku2v2.008df8cf.webp": "/shopping-cart/static/media/zaku2v2.008df8cf.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.22e61109.js",
+    "static/js/runtime-main.2a9d9c69.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.4c990a3d.chunk.js",
+    "static/js/2.13557fee.chunk.js",
     "static/css/main.286b1c73.chunk.css",
-    "static/js/main.c411628e.chunk.js"
+    "static/js/main.8399a37d.chunk.js"
   ]
 }
